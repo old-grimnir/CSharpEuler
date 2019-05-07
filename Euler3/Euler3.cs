@@ -16,10 +16,10 @@ namespace Euler3name
         static Boolean primefunc(int target) // methods before main
         {
             if (target <= 1) return false; // 1 isnt prime
-            if (target == 2) return true; // 2 is prime
+            if (target <= 3) return true; // 2 and 3 are prime
             if (target % 2 == 0) return false; // evens arent prime
             var boundary = (int)Math.Floor(Math.Sqrt(target));
-            for (int i = 3; i <= boundary; i += 2)
+            for (int i = 5; i <= boundary; i += 2) // 5 is next odd value, increment thru odds
             {
                 if (target % i == 0) return false;
             }
@@ -33,20 +33,17 @@ namespace Euler3name
             long prod = 1; // store product of prime factors
             for (int i = 1; i < num; i++)
             {
-                if (num % i == 0) // check if current no is a factor
-                {
-                    if (primefunc(i) == true) // and is it prime
-                    {
-                        pflist.Add(i); // add to list
-                        prod = 1; // reset product (must be at least 1)
-                        foreach (var m in pflist) { prod *= m; } // multiply list contents
-                    }
+                if (num % i == 0 & primefunc(i) == true) // check if current no is a factor
+                {   
+                    pflist.Add(i); // add to list
+                    prod = 1; // reset product (must be at least 1)
+                    foreach (var m in pflist) { prod *= m; } // multiply list contents   
                 }
                 if (prod == num) // if product = target, prime factor is highest
                 {
                     Console.WriteLine("Done");
                     Console.WriteLine(i);
-                    return;
+                    return; // stop the for loop
                 }
             }
         }
