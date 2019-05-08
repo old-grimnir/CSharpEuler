@@ -4,6 +4,13 @@ what is the smallest positive number that is evenly
 divisible by all of the numbers from 1 to 20?
 (Answer: 232792560) */
 
+// this is horrific
+// a better approach would be LCM of a set
+// find prime factors  of 1-20
+// ???
+// profit
+// http://www.math.com/school/subject1/lessons/S1U3L3DP.html
+
 
 using System;
 using System.Diagnostics;
