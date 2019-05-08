@@ -19,7 +19,7 @@ namespace Euler3name
             if (target <= 1) return false; // 1 isnt prime
             if (target == 2) return true; // 2 is prime
             var boundary = (int)Math.Floor(Math.Sqrt(target));
-            for (int i = 3; i <= boundary; i += 2) // 5 is next odd value, increment thru odds
+            for (int i = 3; i <= boundary; i += 2) // increment thru odds
             {
                 if (target % i == 0) return false;
             }
