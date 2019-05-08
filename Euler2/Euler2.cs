@@ -8,6 +8,7 @@ values do not exceed four million,
 (Answer = 4613732) */
 
 using System;
+using System.Diagnostics;
 
 namespace Euler2name
 {
@@ -15,24 +16,25 @@ namespace Euler2name
     {
         static void Main(string[] args)
         {
+            var watch = new System.Diagnostics.Stopwatch();
             int n1 = 1;
             int n2 = 2;
             int n3 = 0;
             int total = 2;
+            watch.Start();
             while (n3 < 4000000)
             {
                 n3 = n1 + n2;
-                if (n3 < 4000000)
+                n1 = n2;
+                n2 = n3;
+                if (n3 % 2 == 0)
                 {
-                    n1 = n2;
-                    n2 = n3;
-                    if (n3 % 2 == 0)
-                    {
-                        total += n3;
-                    }
+                    total += n3;
                 }
             }
-            Console.WriteLine("Total: {0}", total);
+            watch.Stop();
+            Console.WriteLine("Answer: {0}", total);
+            Console.WriteLine("Took: {0} ticks", watch.ElapsedTicks);
         }
     }
 }
