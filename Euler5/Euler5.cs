@@ -4,12 +4,37 @@ what is the smallest positive number that is evenly
 divisible by all of the numbers from 1 to 20?
 (Answer: 232792560) */
 
-// this is horrific
+// this is horrific (2760227 ticks) 
 // a better approach would be LCM of a set
 // find prime factors  of 1-20
 // ???
 // profit
 // http://www.math.com/school/subject1/lessons/S1U3L3DP.html
+//
+// go through list of numbers
+// create list of prime factors & list of greatest occurences
+// multiply each number according to its greatest number of occurences
+// i.e 
+// 30 = 2 * 3 * 5
+// 45 = 3 * 3 * 5
+// LCM = 2 * 3 * 3 * 5 = 90
+// do magic
+// get answer
+
+// create prime checker
+// look for prime factors
+// use a list
+// index of list is number being checked
+// content at index is a list of prime factors
+// ( 0 would be empty)
+// make another list of occurences
+// might need a dict for this
+// prime fact : occurences
+// find most occurences
+// multiply em all
+// find answer
+
+
 
 
 using System;
