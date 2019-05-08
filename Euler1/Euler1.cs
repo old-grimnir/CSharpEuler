@@ -13,18 +13,18 @@ namespace Euler1name
         static void Main(string[] args)
         {
             var watch = new System.Diagnostics.Stopwatch();
-            watch.Start();
             int total = 0;
+            watch.Start();
             for (int i = 1; i < 1000; i++)
             {
-                if ((i % 3 == 0) || (i % 5 == 0))  // short circuited 'OR' outperforms set theory
+                if ((i % 3 == 0) || (i % 5 == 0))  // short circuit 'OR'
                 {
                     total += i;
                 }
             }
-            watch.Stop();
+            watch.Stop(); 
             Console.WriteLine("Answer: {0}", total);
-            Console.WriteLine("Took: {0}", watch.ElapsedTicks);
+            Console.WriteLine("Took: {0} ticks", watch.ElapsedTicks);
         }
     }
 }

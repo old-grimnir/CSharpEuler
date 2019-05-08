@@ -1,8 +1,8 @@
 ﻿/* If we list all the natural numbers below 10 that are multiples of 3 or 5, 
 we get 3, 5, 6 and 9. The sum of these multiples is 23.
 Find the sum of all the multiples of 3 or 5 below 1000.
-This version uses set theory to reduce calculations, but due
-to c#'s short circuit 'OR' (||) this is mostly slower 
+This version uses set theory to reduce calculations,
+using around only 600 loop iterations.
 (Answer = 233168) */
 
 using System;
@@ -20,16 +20,22 @@ namespace Euler1settheoryname
             double sumoffifteens = 0;
             double finalanswer = 0;
             watch.Start();
-            for (int i = 1; i < 1000; i++)
+            for (int i = 3; i < 1000; i += 3)
             {
-                if (i % 3 == 0) { sumofthrees += i; }
-                if (i % 5 == 0) { sumoffives += i; }
-                if (i % 15 == 0) { sumoffifteens += i; }
-                finalanswer = (sumofthrees + sumoffives) - sumoffifteens;
+                sumofthrees += i;
             }
+            for (int j = 5; j < 1000; j += 5)
+            {
+                sumoffives += j;
+            }
+            for (int k = 15; k < 1000; k += 15)
+            {
+                sumoffifteens += k;
+            }
+            finalanswer = (sumofthrees + sumoffives) - sumoffifteens;
             watch.Stop();
             Console.WriteLine("Answer: {0}", finalanswer);
-            Console.WriteLine("Took: {0}", watch.ElapsedTicks);
+            Console.WriteLine("Took: {0} ticks", watch.ElapsedTicks);
         }
     }
 }
