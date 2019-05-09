@@ -4,7 +4,7 @@ what is the smallest positive number that is evenly
 divisible by all of the numbers from 1 to 20?
 (Answer: 232792560) */
 
-// this is horrific (2760227 ticks) 
+// this is bad (2760227 ticks) 
 // a better approach would be LCM of a set
 // find prime factors  of 1-20
 // ???

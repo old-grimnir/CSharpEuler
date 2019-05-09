@@ -18,7 +18,8 @@ namespace Euler3name
         {
             if (target <= 1) return false; // 1 isnt prime
             if (target == 2) return true; // 2 is prime
-            var boundary = (int)Math.Floor(Math.Sqrt(target));
+            if (target % 2 == 0) return false; // evens arent prime
+            var boundary = (int)Math.Floor(Math.Sqrt(target)); // only need to check upto sq root
             for (int i = 3; i <= boundary; i += 2) // increment thru odds
             {
                 if (target % i == 0) return false;

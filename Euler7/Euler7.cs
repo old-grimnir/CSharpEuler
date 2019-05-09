@@ -14,7 +14,7 @@ namespace Euler7name
         {
             if (target <= 1) return false; // 1 is not prime
             if (target == 2) return true; // 2 is prime
-            if (target % 2 == 0) return false; // evens arent prime - this line appears to be essential (contradicts Euler 3?)
+            if (target % 2 == 0) return false; // evens arent prime 
             var boundary = (int)Math.Floor(Math.Sqrt(target));
             for (int i = 3; i <= boundary; i += 2)
             {
@@ -25,9 +25,11 @@ namespace Euler7name
 
         static void Main()
         {
+            var watch = new System.Diagnostics.Stopwatch();
             bool done = false;
             int i = 1;
             int pcount = 0;
+            watch.Start();
             while (!done)
             {
                 if (primefunc(i))
@@ -35,12 +37,14 @@ namespace Euler7name
                     pcount += 1;
                     if (pcount == 10001)
                     {
-                        Console.WriteLine(i);
+                        Console.WriteLine("Answer: {0}", i);
+                        watch.Stop();
                         done = true;
                     }
                 }
                 i++;
             }
+            Console.WriteLine("Took: {0} ticks", watch.ElapsedTicks);
         }
     }
 }
