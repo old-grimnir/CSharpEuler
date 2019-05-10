@@ -4,33 +4,29 @@ namespace Scratch2name
 {
     class Scratch2
     {
-        public class Counter
+        public class Employee
         {
-            private Counter() { }
-            public static int currentCount;
-            public static int IncrementCount()
+            public int Salary;
+
+            public Employee(int annualSalary)
             {
-                return ++currentCount;
+                Salary = annualSalary;
+            }
+
+            public Employee(int weeklySalary, int numberOfWeeks)
+            {
+                Salary = weeklySalary * numberOfWeeks;
             }
         }
 
-        class TestCounter
+
+        static void Main()
         {
-            static void Main()
-            {
-                // If you uncomment the following statement, it will generate
-                // an error because the constructor is inaccessible:
-                // Counter aCounter = new Counter();   // Error
+            Employee e1 = new Employee(30000);
+            Employee e2 = new Employee(500, 52);
 
-                Counter.currentCount = 100;
-                Counter.IncrementCount();
-                Console.WriteLine("New count: {0}", Counter.currentCount);
-
-                // Keep the console window open in debug mode.
-                Console.WriteLine("Press any key to exit.");
-                Console.ReadKey();
-            }
+            Console.WriteLine(e1.Salary);
+            Console.WriteLine(e2.Salary);
         }
-        // Output: New count: 101
     }
 }
