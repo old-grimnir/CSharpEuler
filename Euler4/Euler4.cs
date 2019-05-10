@@ -35,9 +35,9 @@ namespace Euler4name
             int prod1 = 0;
             int prod2 = 0;
             watch.Start();
-            for (int i = 100; i < 1000; i++)
+            for (int i = 1000; i > 900; i--)
             {
-                for (int j = 100; j < 1000; j++)
+                for (int j = 1000; j > 900; j--)
                 {
                     temp = i * j;  // multiply nums
                     temp2 = revnum(temp); // check if palindrome
