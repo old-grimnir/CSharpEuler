@@ -25,10 +25,7 @@ namespace Euler6name
             for (int i = 1; i < 101; i++)
             {
                 sumsq += (i * i);
-            }
-            for (int j = 1; j < 101; j++)
-            {
-                sqsum += j;
+                sqsum += i;
             }
             sqsum = sqsum * sqsum;
             answerdif = (sqsum - sumsq);
