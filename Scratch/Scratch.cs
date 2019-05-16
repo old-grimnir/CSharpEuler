@@ -10,6 +10,7 @@ namespace Scratchname
         {
             
             Console.WriteLine("hello jupiter!");
+            // try prob 5 using Euclid's algorithm
         }
     }
 }
