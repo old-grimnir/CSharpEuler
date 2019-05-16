@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.28803.352
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Euler1", "Euler1\Euler1.csproj", "{7455BB52-7AC8-4AB9-9ACC-30417E0778AE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Euler1settheory", "Euler1settheory\Euler1settheory.csproj", "{5A6C3D27-47DC-4564-BA16-13C9565B8A6D}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Euler2", "Euler2\Euler2.csproj", "{064CAF7E-484A-4CB3-848F-88A819962732}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Euler3", "Euler3\Euler3.csproj", "{7EA7F74E-C29B-4B44-AF07-18BDD90D3C9E}"
@@ -23,7 +21,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Euler8", "Euler8\Euler8.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scratch", "Scratch\Scratch.csproj", "{8AC22EB7-9BAA-45A4-BC5F-F371DD587F63}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scratch2", "Scratch2\Scratch2.csproj", "{4C06AD5C-130F-4D8B-8BE5-17BBD0F288B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scratch2", "Scratch2\Scratch2.csproj", "{4C06AD5C-130F-4D8B-8BE5-17BBD0F288B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +33,6 @@ Global
 		{7455BB52-7AC8-4AB9-9ACC-30417E0778AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7455BB52-7AC8-4AB9-9ACC-30417E0778AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7455BB52-7AC8-4AB9-9ACC-30417E0778AE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5A6C3D27-47DC-4564-BA16-13C9565B8A6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5A6C3D27-47DC-4564-BA16-13C9565B8A6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5A6C3D27-47DC-4564-BA16-13C9565B8A6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5A6C3D27-47DC-4564-BA16-13C9565B8A6D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{064CAF7E-484A-4CB3-848F-88A819962732}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{064CAF7E-484A-4CB3-848F-88A819962732}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{064CAF7E-484A-4CB3-848F-88A819962732}.Release|Any CPU.ActiveCfg = Release|Any CPU
