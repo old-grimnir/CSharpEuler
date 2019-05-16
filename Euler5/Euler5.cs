@@ -105,6 +105,7 @@ namespace Euler5name
             Console.WriteLine("\nAnswer: {0}", total);
             watch.Stop();
             Console.WriteLine("\nTook: {0} ticks", watch.ElapsedTicks);
+            Console.WriteLine("Took: {0} ms", watch.ElapsedMilliseconds);
         }
     }
 }

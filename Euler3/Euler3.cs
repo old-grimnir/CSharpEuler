@@ -50,6 +50,7 @@ namespace Euler3name
             }
             watch.Stop();
             Console.WriteLine("Took: {0} ticks", watch.ElapsedTicks);
+            Console.WriteLine("Took: {0} ms", watch.ElapsedMilliseconds);
         }
     }
 }

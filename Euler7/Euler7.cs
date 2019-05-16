@@ -45,6 +45,7 @@ namespace Euler7name
                 i++;
             }
             Console.WriteLine("Took: {0} ticks", watch.ElapsedTicks);
+            Console.WriteLine("Took: {0} ms", watch.ElapsedMilliseconds);
         }
     }
 }

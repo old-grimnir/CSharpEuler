@@ -32,6 +32,7 @@ namespace Euler6name
             watch.Stop();
             Console.WriteLine("Answer: {0}", answerdif);
             Console.WriteLine("Took: {0} ticks", watch.ElapsedTicks);
+            Console.WriteLine("Took: {0} ms", watch.ElapsedMilliseconds);
         }
     }
 }

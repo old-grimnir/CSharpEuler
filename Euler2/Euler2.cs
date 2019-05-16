@@ -35,6 +35,7 @@ namespace Euler2name
             watch.Stop();
             Console.WriteLine("Answer: {0}", total);
             Console.WriteLine("Took: {0} ticks", watch.ElapsedTicks);
+            Console.WriteLine("Took: {0} ms", watch.ElapsedMilliseconds);
         }
     }
 }

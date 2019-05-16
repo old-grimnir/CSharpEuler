@@ -53,6 +53,7 @@ namespace Euler4name
             Console.WriteLine("Answer: {0}", sol);
             Console.WriteLine("Product of {0} & {1}", prod1, prod2);
             Console.WriteLine("Took: {0} ticks", watch.ElapsedTicks);
+            Console.WriteLine("Took: {0} ms", watch.ElapsedMilliseconds);
         }
     }
 }
