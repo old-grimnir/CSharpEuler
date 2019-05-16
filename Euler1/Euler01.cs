@@ -7,9 +7,9 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 using System;
 using System.Diagnostics;
 
-namespace Euler1name
+namespace Euler01name
 {
-    class Euler1
+    class Euler01
     {
         static void Main(string[] args)
         {

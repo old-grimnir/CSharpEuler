@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28803.352
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Euler1", "Euler1\Euler1.csproj", "{7455BB52-7AC8-4AB9-9ACC-30417E0778AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Euler01", "Euler1\Euler01.csproj", "{7455BB52-7AC8-4AB9-9ACC-30417E0778AE}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Euler2", "Euler2\Euler2.csproj", "{064CAF7E-484A-4CB3-848F-88A819962732}"
 EndProject
