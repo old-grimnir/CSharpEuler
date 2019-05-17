@@ -1,20 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 
 namespace Scratchname
 {
     class Scratch
     {
-        
-
-
-        static void Main(string[] args)
+        static void Main()
         {
+            Console.WriteLine(GCD(new[] { 1605, 4200, 10235 }));
+        }
 
-            //Console.WriteLine(GCD(270, 192));
-            // try to make a seive upto sqroot of 600851475143
+        static int GCD(int a, int b)
+        {
+            return b == 0 ? a : GCD(b, a % b);
+        }
 
+        static int GCD(int[] integerSet) // overloaded method
+        {
+            return integerSet.Aggregate(GCD); // similar to pythons reduce function
         }
     }
 }

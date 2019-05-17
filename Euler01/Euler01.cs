@@ -14,11 +14,11 @@ namespace Euler01name
         static void Main(string[] args)
         {
             var watch = new System.Diagnostics.Stopwatch();
+            watch.Start();
             double sumofthrees = 0;
             double sumoffives = 0;
             double sumoffifteens = 0;
             double finalanswer = 0;
-            watch.Start();
             for (int i = 3; i < 1000; i += 3)
             {
                 sumofthrees += i;

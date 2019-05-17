@@ -17,11 +17,11 @@ namespace Euler2name
         static void Main(string[] args)
         {
             var watch = new System.Diagnostics.Stopwatch();
+            watch.Start();
             int n1 = 1;
             int n2 = 2;
             int n3 = 0;
             int total = 2;
-            watch.Start();
             while (n3 < 4000000)
             {
                 n3 = n1 + n2;
