@@ -3,6 +3,7 @@ we get 3, 5, 6 and 9. The sum of these multiples is 23.
 Find the sum of all the multiples of 3 or 5 below 1000. 
 (Answer = 233168) */
 // this version uses inclusion exclusion principle
+// ~ 40 ticks
 
 using System;
 using System.Diagnostics;

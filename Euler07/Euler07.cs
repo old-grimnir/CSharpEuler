@@ -2,6 +2,7 @@
 we can see that the 6th prime is 13.
 What is the 10 001st prime number?
 (Answer: 104743) */
+// ~ 100,000 ticks
 
 using System;
 using System.Diagnostics;

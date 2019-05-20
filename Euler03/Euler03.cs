@@ -1,10 +1,13 @@
 ﻿/* The prime factors of 13195 are 5, 7, 13 and 29.
 What is the largest prime factor of the number 600851475143
         ~
-Quick solution: count from 1 to target, checking for factors which are prime, add each prime factor to a list,
+Quick solution (50-120,000 ticks): count from 1 to target, checking for factors which are prime, add each prime factor to a list,
 find product of list, if product = target, last prime added is highest 
         ~
+Quicker solution (30 - 60 ticks): Divide out all the factors until we are left with highest prime factor
+        ~
 (Answer = 6857) */
+// ~ 50 ticks
 
 using System;
 using System.Collections.Generic;

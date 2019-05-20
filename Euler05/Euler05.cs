@@ -4,6 +4,7 @@ what is the smallest positive number that is evenly
 divisible by all of the numbers from 1 to 20?
 (Answer: 232792560) */
 // this version uses multiplication of prime factors to find LCM
+// > 70,000 ticks
 
 using System;
 using System.Collections.Generic;
