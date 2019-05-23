@@ -28,13 +28,13 @@ namespace Euler05name
         }
 
 
-        class Coords
+        class Nmbr
         {
             public int targ; // number in question
             public List<long> pflist = new List<long>(); // list for prime factors
             public SortedSet<long> pset = new SortedSet<long>(); // set for unique prime factors
 
-            public Coords(int targ) // constructor
+            public Nmbr(int targ) // constructor
             {
                 this.targ = targ; // supplied target
                 this.pflist = primefactors(); // populate list via method
@@ -67,10 +67,10 @@ namespace Euler05name
             watch.Start();
             SortedSet<long> mainpset = new SortedSet<long>(); // main set of primes
             List<int> occlist = new List<int>();  // list of occurences - cross references mainpset
-            List<Coords> coordlist = new List<Coords>();  // list for class instances
+            List<Nmbr> coordlist = new List<Nmbr>();  // list for class instances
             for (int i = 1; i < 21; i++)
             {
-                coordlist.Add(new Coords(i)); // add instances with target from 1 to 20
+                coordlist.Add(new Nmbr(i)); // add instances with target from 1 to 20
             }
             foreach (var c in coordlist) { foreach (var d in c.pset) { mainpset.Add(d); } }; // populate main set
             int counter = 0; // counter for occurences
