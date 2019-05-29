@@ -33,7 +33,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scratch4", "Scratch4\Scratc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Euler01_linq", "Euler01_linq\Euler01_linq.csproj", "{3FDA3584-7BB9-4F9B-B7B1-8634D7E4278B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Euler02_linq", "Euler02_linq\Euler02_linq.csproj", "{91BA973F-E5FF-4951-8E0A-9F050371FBAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Euler02_linq", "Euler02_linq\Euler02_linq.csproj", "{91BA973F-E5FF-4951-8E0A-9F050371FBAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Euler04_linq", "Euler04_linq\Euler04_linq.csproj", "{E1F50B46-481C-4898-9B56-47F3FA342BFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Euler03_linq", "Euler03_linq\Euler03_linq.csproj", "{84F160FE-D055-42EF-95A1-C6CF1C05172E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +109,14 @@ Global
 		{91BA973F-E5FF-4951-8E0A-9F050371FBAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91BA973F-E5FF-4951-8E0A-9F050371FBAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91BA973F-E5FF-4951-8E0A-9F050371FBAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1F50B46-481C-4898-9B56-47F3FA342BFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1F50B46-481C-4898-9B56-47F3FA342BFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1F50B46-481C-4898-9B56-47F3FA342BFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1F50B46-481C-4898-9B56-47F3FA342BFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84F160FE-D055-42EF-95A1-C6CF1C05172E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84F160FE-D055-42EF-95A1-C6CF1C05172E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84F160FE-D055-42EF-95A1-C6CF1C05172E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84F160FE-D055-42EF-95A1-C6CF1C05172E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
