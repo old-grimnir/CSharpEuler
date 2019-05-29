@@ -9,21 +9,9 @@ namespace Euler01_linqname
         {
             var watch = new System.Diagnostics.Stopwatch();
             watch.Start();
-
-            int[] vals = Enumerable.Range(1, 999).ToArray(); // array comprehension
-            int total = 0;
-
-            var lq = from v in vals  // actual linq query
-                     where (v % 3 == 0) || (v % 5 == 0)
-                     select v;
-
-            foreach (var sv in lq) // use the linq object
-            {
-                total += sv;
-            };
-
+            Int32 vals = Enumerable.Range(1, 999).Where(x => x % 3 == 0 || x % 5 == 0).Sum();
             watch.Stop();
-            Console.WriteLine("Answer: {0}", total);
+            Console.WriteLine("Answer: {0}", vals);
             Console.WriteLine("Took: {0} ticks", watch.ElapsedTicks);
             Console.WriteLine("Took: {0} ms", watch.ElapsedMilliseconds);
         }
